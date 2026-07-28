@@ -46,7 +46,7 @@ class RAGPipeline:
             )
 
             # Lightweight & faster model
-            self.model_name = "gemini-2.5-flash-lite"
+            self.model_name = settings.GEMINI_MODEL
 
         else:
             self.client = None
