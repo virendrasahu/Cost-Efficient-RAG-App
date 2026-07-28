@@ -1,23 +1,3 @@
-# fastapi>=0.100.0
-# python-multipart>=0.0.6
-# uvicorn>=0.22.0
-# pydantic>=2.0
-# pydantic-settings>=2.0.0
-# pypdf>=3.10.0
-# beautifulsoup4>=4.12.0
-# markdown>=3.4
-# chromadb>=0.4.0
-# sentence-transformers>=2.2.2
-# pyarrow>=12.0.0
-# google-genai>=0.1.0
-# google-generativeai>=0.3.0
-# ragas>=0.1.0
-# pandas>=2.0.0
-# numpy>=1.24.0
-# python-dotenv>=1.0.0
-# loguru>=0.7.0
-# sentence-transformers>=2.2.2
-
 fastapi==0.115.0
 uvicorn==0.30.6
 python-multipart==0.0.9
@@ -27,19 +7,13 @@ pydantic-settings==2.5.2
 
 chromadb==0.5.5
 
-sentence-transformers==2.7.0
-transformers==4.41.2
-# torch==2.3.1
-torch==2.13.0
+google-generativeai==0.8.5
+google-genai==1.0.0
 
-pypdf==5.0.1
-beautifulsoup4==4.12.3
-markdown==3.7
-
-google-genai==1.30.0
-
-numpy==1.26.4
-pandas==2.2.3
-
-python-dotenv==1.0.1
-loguru==0.7.2
+pypdf
+beautifulsoup4
+markdown
+pandas
+numpy
+python-dotenv
+loguru
