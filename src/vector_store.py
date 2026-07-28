@@ -14,7 +14,7 @@ class VectorStoreManager:
     def __init__(
         self,
         db_path: str = settings.VECTOR_STORE_PATH,
-        collection_name: str = "rag_chunks",
+        collection_name=settings.COLLECTION_NAME,
     ):
         os.makedirs(db_path, exist_ok=True)
 
