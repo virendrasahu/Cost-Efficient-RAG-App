@@ -1,0 +1,65 @@
+{
+  "mean_hit_rate": 1.0,
+  "mean_recall_at_k": 1.0,
+  "mean_mrr": 1.0,
+  "mean_ndcg_at_k": 1.0,
+  "mean_context_precision": 0.9583333333333333,
+  "details": [
+    {
+      "question": "What is the primary objective of a Cost-Efficient RAG application?",
+      "gold_source": "./data/raw_documents/guide.md",
+      "retrieved_sources": [
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents\\test_doc.md",
+        "./data/raw_documents/guide.md"
+      ],
+      "hit_rate": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "context_precision": 0.8333333333333333
+    },
+    {
+      "question": "How is chunk ID deterministically generated to ensure idempotent re-ingestion?",
+      "gold_source": "./data/raw_documents/guide.md",
+      "retrieved_sources": [
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents/guide.md"
+      ],
+      "hit_rate": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "question": "What happens when retrieved chunks have low similarity scores below the threshold?",
+      "gold_source": "./data/raw_documents/guide.md",
+      "retrieved_sources": [
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents/guide.md"
+      ],
+      "hit_rate": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "context_precision": 1.0
+    },
+    {
+      "question": "What vector store is used in this implementation to eliminate base pod costs?",
+      "gold_source": "./data/raw_documents/guide.md",
+      "retrieved_sources": [
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents/guide.md",
+        "./data/raw_documents\\test_doc.md"
+      ],
+      "hit_rate": 1.0,
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "ndcg_at_k": 1.0,
+      "context_precision": 1.0
+    }
+  ]
+}
