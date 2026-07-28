@@ -1,3 +1,4 @@
+import traceback
 import os
 import shutil
 from typing import Optional, Dict, Any, List
@@ -82,6 +83,7 @@ async def health():
     }
 
 
+
 @app.get("/stats")
 async def stats():
     try:
@@ -94,10 +96,10 @@ async def stats():
             "total_vectors": len(existing_ids)
         }
 
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-
+    except Exception:
+        traceback.print_exc()
+        logger.exception("Stats endpoint failed")
+        raise
 
 @app.post("/ingest", response_model=IngestResponse)
 async def ingest_document(file: UploadFile = File(...)):
